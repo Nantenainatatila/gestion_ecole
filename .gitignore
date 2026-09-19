@@ -1,0 +1,14 @@
+#dependances
+node_modules/
+
+#variable secretes
+.env
+.env.*
+
+#build
+dist/
+build/
+
+#log
+*.log
+

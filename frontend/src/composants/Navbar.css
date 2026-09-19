@@ -1,0 +1,121 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1f2937;
+}
+.main-content {
+    margin-left: 213px;
+    padding: 25px;
+    height: 100%;
+    top: 0;
+    box-sizing: border-box;
+    background-color: rgb(67, 67, 85);
+}
+
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+
+    border:  none;
+    border-radius: 6px;
+
+    background-color: #1f2937;
+    color: white;
+
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 2000;
+
+}
+
+.titre {
+    color: white;
+    margin-bottom: 30px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 1px;
+    border-radius: 6px;
+    margin: 13px; 
+    font-size: 15px;
+   
+    
+}
+
+.navbar a.active {
+    color: aqua;
+    
+}
+.navbar a:hover {
+    color: rgb(45, 74, 74);
+    
+}
+.select-nav{
+    padding: 7px ;
+    border-radius: 10px;
+    width: 150px;
+    margin: 9px;
+    box-sizing: border-box
+}
+
+body {
+    color: white;
+    background-color: rgb(67, 67, 85);
+}
+.logo-fixed {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+
+    width: 110px;
+    object-fit: contain;
+    z-index: 1000;
+    border-radius: 50%;
+}
+@media (max-width: 750px) {
+    .menu-toggle {
+        display: block;
+        top: 15px;
+        position: fixed;
+        z-index: 1001;
+      
+
+    }
+    .navbar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    .navbar.ouvert {
+        transform: translateX(0);
+    }
+    .main-content {
+        margin-left: 0px;
+        padding: 70px 15px 20px;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        gap: 0px;
+        margin-bottom: 0px;
+        align-items: center;
+    }
+
+}
+.bouton {
+    width: 150px;
+}
